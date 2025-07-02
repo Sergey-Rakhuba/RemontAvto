@@ -1,0 +1,53 @@
+.exempls-work-page .video-container { 
+  width: 100%;
+  height: auto;
+  background: #000 !important;
+}
+
+.exempls-work-page .video-container video { 
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+.exempls-work-page .video-container video:focus {
+    opacity: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+
+
+.exempls-work-page {
+    .imj-container {
+        display: none !important; 
+    }
+    .swiper-button-next {
+        color: #000;
+    }
+    .swiper-button-prev {
+        color: #000;
+    }
+    .slider {
+        width: auto;
+    }
+
+    .swiperSlider {
+        margin: 0 !important;
+    }
+
+    .swiper-pagination-bullet {
+        background: #8e8c8c;
+        opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #010101;
+        opacity: 1;
+        transform: scale(1.5);
+        transition: all 0.3s ease;
+    }
+
+}
