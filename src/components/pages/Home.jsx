@@ -38,7 +38,7 @@ const Home = () => {
 
   return (
     <>
-      <section style={{ background: `url(${bgpag1}) no-repeat`, backgroundSize: '100% 100%', backgroundPosition: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: '100vh', backgroundSize: 'cover' }}>
+      <section style={{ background: `url(${bgpag1}) no-repeat`, backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: '100vh' }}>
         <div>
           <h1 className="color-white position-center ">
             Вітаємо в автосервісі
