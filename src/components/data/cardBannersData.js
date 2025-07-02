@@ -11,22 +11,22 @@
 export const CARDBANER = [
     {
         id: 1,
-        imgCardBan: 'src/assets/img/01.png',
+        imgCardBan: '/img/01.png',
         textCardBan: 'Уже 6 лет мы занимаемся качественным восстановлением машин от повреждений разной сложности. Рейтинг нашей мастерской на Яндексе составляет 4,5.'
     },
     {
         id: 2,
-        imgCardBan: 'src/assets/img/02.png',
+        imgCardBan: '/img/02.png',
         textCardBan: 'Новинки Заметили следы естественного износа? Мы легко удалим царапины, вмятины, коррозию и ржавчину, которые могут изрядно подпортить внешний вид автомобиля.'
     },
     {
         id: 3,
-        imgCardBan: 'src/assets/img/03.png',
+        imgCardBan: '/img/03.png',
         textCardBan: 'Попали в ДТП и хотите сохранить вид вашего авто? Исправим повреждения за короткий срок!'
     },
     {
         id: 4,
-        imgCardBan: 'src/assets/img/04.png',
+        imgCardBan: '/img/04.png',
         textCardBan: 'Использование качественных материалов: Sikkens, Akzo, Nobel, Brulex, 3M, Car System, Body Reoflex, позволяет сохранить результат работы надолго. Гарантия на все виды работ составляет 1 год.'
     }
 ];
@@ -34,17 +34,17 @@ export const CARDBANER = [
 export const CARDBANER1 = [
     {
         id: 1,
-        imgCardBan: 'src/assets/img/1.jpg',
+        imgCardBan: '/img/1.jpg',
         textCardBan: 'Гарантия 1 год'
     },
     {
         id: 2,
-        imgCardBan: 'src/assets/img/2.jpg',
+        imgCardBan: '/img/2.jpg',
         textCardBan: 'Делаем как для себя: качественно и без переплат'
     },
     {
         id: 3,
-        imgCardBan: 'src/assets/img/3.jpg',
+        imgCardBan: '/img/3.jpg',
         textCardBan: 'Салон расположен в пределах МКАД '
     }
    
@@ -125,8 +125,8 @@ export const CARDWORK = [
 export const IMGWORK = [
     {
         id: 1,
-        imgCardBan: 'src/assets/img/exempl/ex1.png',
-        imgCardBan2: 'src/assets/img/exempl/doex1.png'
+        imgCardBan: '/img/exempl/ex1.png',
+        imgCardBan2: '/img/exempl/doex1.png'
     },
     {
         id: 2,
