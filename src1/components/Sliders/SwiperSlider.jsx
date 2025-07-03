@@ -11,6 +11,14 @@ import { getInitialLikes, saveLikes } from '../data/sliderLikes';
 import './SwiperSlider.css'
 
 function SwiperSlider ({ params = [] }) {
+  // Функція для отримання оптимізованого шляху до зображення
+  const getOptimizedImagePath = (originalPath) => {
+    if (!originalPath) return null;
+    // Витягуємо ім'я файлу з оригінального шляху
+    const fileName = originalPath.split('/').pop();
+    // Повертаємо шлях до оптимізованого зображення
+    return `/RemontAvto/img/${fileName}`;
+  }
   const [forceUpdate, setForceUpdate] = useState(0); // Для оновлення компонента
   const forceUpdateComponent = () => setForceUpdate(prev => prev + 1);
   const swiperRef = useRef(null);
@@ -148,7 +156,7 @@ function SwiperSlider ({ params = [] }) {
             
             <div className="imj-container" style={{ display: 'flex', flexDirection: 'row' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '50%' }} src={slide.image} alt={slide.title} />
+                <img style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '50%' }} src={getOptimizedImagePath(slide.image)} alt={slide.title} />
               </div>
               <div>
                 <h3>{slide.title}</h3>

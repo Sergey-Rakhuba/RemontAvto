@@ -6,13 +6,13 @@ import './Home.css';
 import SwiperSlider from '../Sliders/SwiperSlider.jsx';
 import { SLIDER_DATA } from '../../components/data/sliderData';
 // Шляхи до зображень
-const img1 = 'src/assets/img/1.jpg';
-const img2 = 'src/assets/img/2.jpg';
-const img3 = 'src/assets/img/3.jpg';
-const bgpag1 = 'src/assets/img/bgpag1.jpg';
-const bgpag2 = 'src/assets/img/pexels-pixabay.png';
-const bgpag3 = 'src/assets/img/bgpag3.png';
-const bgpag4 = 'src/assets/img/bgpag4.png';
+const img1 = '/assets/1.jpg';
+const img2 = '/assets/2.jpg';
+const img3 = '/assets/3.jpg';
+const bgpag1 = '/assets/bgpag1.jpg';
+const bgpag2 = '/assets/pexels-pixabay.png';
+const bgpag3 = '/assets/bgpag3.png';
+const bgpag4 = '/assets/bgpag4.png';
 
 import CardBanner from './components/cardBaner';
 import { CARDBANER } from '../../components/data/cardBannersData.js';

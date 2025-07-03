@@ -10,6 +10,31 @@ export default defineConfig({
     }
   },
   assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg', '**/*.mp4'],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+    manifest: true,
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      },
+      external: ['@mui/*']
+    },
+    assetsInlineLimit: 0,
+    minify: true,
+    terserOptions: {
+      compress: {
+        drop_console: true
+      }
+    },
+    sourcemap: true,
+    output: {
+      entryFileNames: 'assets/main-[hash].js',
+      chunkFileNames: '[name]-[hash].js',
+      assetFileNames: '[name]-[hash].[ext]'
+    }
+  },
   server: {
     port: 3000,
     open: true
@@ -35,7 +60,7 @@ export default defineConfig({
     },
     sourcemap: true,
     output: {
-      entryFileNames: 'main-[hash].js',
+      entryFileNames: 'assets/main-[hash].js',
       chunkFileNames: '[name]-[hash].js',
       assetFileNames: '[name]-[hash].[ext]'
     }

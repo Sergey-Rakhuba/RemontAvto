@@ -1,7 +1,11 @@
+import avatar1 from '../../assets/img/avatar/1.jpg';
+import avatar2 from '../../assets/img/avatar/2.jpg';
+import avatar3 from '../../assets/img/avatar/3.jpg';
+
 export const SLIDER_DATA = [
   {
     id: 1,
-    image: 'src/assets/img/avatar/1.jpg',
+    image: avatar1,
     title: 'Alisa Romanova',
     description: 'Відновлення геометрії кузова та виправлення випуклостей',
     userStatus: 'Клиент',
@@ -11,7 +15,7 @@ export const SLIDER_DATA = [
   },
   {
     id: 2,
-    image: 'src/assets/img/avatar/2.jpg',
+    image: avatar2,
     title: 'Alisa Romanova',
     description: 'Професійне нанесення лакокраскового покриття',
     userStatus: 'Клиент',
@@ -21,7 +25,7 @@ export const SLIDER_DATA = [
   },
   {
     id: 3,
-    image: 'src/assets/img/avatar/3.jpg',
+    image: avatar3,
     title: 'Alisa Romanova',
     description: 'Повна перевірка стану кузова та виявлення проблем',
     userStatus: 'Клиент',
@@ -41,7 +45,7 @@ export const SLIDER_DATA = [
   },
   {
     id: 5,
-    image: 'src/assets/img/avatar/2.jpg', 
+    image: avatar2, 
     title: 'Alisa Romanova',
     description: 'Глибока чистка кузова від забруднень',
     userStatus: 'Клиент',
@@ -51,7 +55,7 @@ export const SLIDER_DATA = [
   },
   {
     id: 6,
-    image: 'src/assets/img/avatar/3.jpg',
+    image: avatar3,
     title: 'Alisa Romanova',
     description: 'Встановлення нових деталей кузова',
     userStatus: 'Клиент',
@@ -61,7 +65,7 @@ export const SLIDER_DATA = [
   },
   {
     id: 7,
-    image: 'src/assets/img/avatar/1.jpg',
+    image: '/RemontAvto/img/avatar/1.jpg',
     title: 'Alisa Romanova',
     description: 'Гарантія на виконані роботи',
     userStatus: 'Клиент',
@@ -71,7 +75,7 @@ export const SLIDER_DATA = [
   },
   {
     id: 8,
-    image: 'src/assets/img/avatar/2.jpg',
+    image: avatar2,
     title: 'Alisa Petr',
     description: 'Мінімальний термін виконання робіт',
     userStatus: 'Клиент',
@@ -81,7 +85,7 @@ export const SLIDER_DATA = [
   },
   {
     id: 9,
-    image: 'src/assets/img/avatar/3.jpg',
+    image: avatar3,
     title: 'Професійний підхід',
     description: 'Використання сучасного обладнання та матеріалів',
     userStatus: 'Клиент',
@@ -91,7 +95,7 @@ export const SLIDER_DATA = [
   },
   {
     id: 10,
-    image: 'src/assets/img/avatar/1.jpg',
+    image: '/RemontAvto/img/avatar/1.jpg',
     title: 'Консультації',
     description: 'Безкоштовна консультація про ремонту',
     userStatus: 'Клиент',
@@ -105,7 +109,7 @@ export const SLIDER_DATA_VIDEO = [
   {
     id: 1,
     
-    video: 'src/assets/video/1.mp4',
+    video: '/RemontAvto/img/video/1.mp4',
   },
   {
     id: 2,
