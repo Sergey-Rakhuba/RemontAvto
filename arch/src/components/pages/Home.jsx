@@ -38,7 +38,7 @@ const Home = () => {
 
   return (
     <>
-      <section style={{ background: `url(${bgpag1}) no-repeat`, backgroundSize: '100% 100%', backgroundPosition: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: '100vh', backgroundSize: 'cover' }}>
+      <section style={{ background: `url(${bgpag1}) no-repeat`, backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: '100vh' }}>
         <div>
           <h1 className="color-white position-center ">
             Вітаємо в автосервісі
@@ -115,7 +115,7 @@ const Home = () => {
           </div>
         </div>
       </section>      
-      <section style={{background: `url(${bgpag3}) no-repeat`, backgroundSize: '100% 100%', backgroundPosition: 'center', width: '100vw', height: '100', padding: '80px 0'}}>
+      <section className="home-page" style={{background: `url(${bgpag3}) no-repeat`, backgroundSize: '100% 100%', backgroundPosition: 'center', width: '100vw', height: '100', padding: '80px 0'}}>
         <div className="box" >
           <div className="container">
             <div className="element">
@@ -181,18 +181,19 @@ const Home = () => {
           <div className="box">
             <div className="element">
               <p className="color-white al-center">
-                Испытайте снова ту радость, когда вы только купили блестящую машинку в салоне! Качественный покрас и ремонт автомобиля - это отличный вариант обновить авто без покупки нового
+                Відчуйте знову ту радость, коли ви тільки придбали блискучий автомобіль в салоні! Якісне фарбування та ремонт автомобіля - це відмінний варіант оновити авто без придбання нового
               </p>
             </div>
           </div>
-          <div className="box" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
-            <item style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: '1 1 50%' , minWidth: '300px' }}>
-              <p className="color-white al-center">
-              Вы можете добавить фото для оценки<br /> стоимости ремонта через форму
+          <div className="box-files" >
+            <item className="element-files" >
+              <p className="color-white" style={{ minWidth: '35vw' }}>
+              Ви можете додати фото для оцінки вартості ремонту через форму
               </p>
-              <input type="file" />
+              <label htmlFor="fileInput">Виберіть файл</label>
+              <input type="file" id="fileInput" multiple/>
             </item>
-            <item style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: '1 1 50%' }}>
+            <item className="element-files" >
               <input type="text" placeholder="Ваше ім'я" />
               <input type="phone" placeholder="Ваш номер телефону" />
               <button type="button">Заказать звонок</button>

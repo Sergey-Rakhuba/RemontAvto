@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: process.env.NODE_ENV === 'production' ? '/RemontAvto/' : '/',
   resolve: {
     alias: {
-      '@': '/src'
+      '@': './src'
     }
   },
   assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg', '**/*.mp4'],
@@ -24,7 +24,20 @@ export default defineConfig({
       input: {
         main: './index.html'
       },
-      external: ['@mui/material']
+      external: ['@mui/*']
+    },
+    assetsInlineLimit: 0,
+    minify: true,
+    terserOptions: {
+      compress: {
+        drop_console: true
+      }
+    },
+    sourcemap: true,
+    output: {
+      entryFileNames: 'main-[hash].js',
+      chunkFileNames: '[name]-[hash].js',
+      assetFileNames: '[name]-[hash].[ext]'
     }
   }
 })

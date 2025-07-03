@@ -1,6 +1,17 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
 main {
   overflow: hidden;
   /* width: 100vw; */
+}
+
+.home-page .video-container {
+  display: none;
 }
 
 button {
@@ -310,3 +321,38 @@ p {
     padding: 7px;
   }
 }
+
+.element-files {
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  /* flex: 1 1 50%; */
+  box-sizing: border-box;
+  button {
+    width: 100%;
+  }
+  input {
+    height: 30px;
+    width: 100%;
+  }
+  label {
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    text-align: left !important;
+  }
+}
+
+.box-files {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+

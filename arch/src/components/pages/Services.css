@@ -87,14 +87,14 @@
   margin: 0.5rem;
 }
 .services-content .card-banner-item img{
-  width: auto;
+  /* width: auto; */
   height: auto;
 }
 
-.services-page .card-banner-item img{
+/* .services-page .card-banner-item img{
   width: 100%;
   height: 100%;
-}
+} */
 
 
 .services-page .services-content, .services-page .services-slider {
